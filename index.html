@@ -1,426 +1,213 @@
-<!-----META SECTION----->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Student Portfolio Website Template</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="Personal-Portfolio/portfolio/style.css">
-    <link rel="icon" type="image/x-icon" href="Personal-Portfolio/portfolio/portfolio.svg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone Website </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png">
 </head>
 
 <body>
-    <!-----MENU SECTION------>
-    <div class="main-panel" id="home">
-        <div class="container">
-            <div class="width-66">
-                <nav id="navbar">
-                    <div class="progress-container">
-                        <div class="progress-bar" id="myBar"></div>
-                    </div>
-                    <div class="width-33 logo">
-                        Port<span id="logo" class="span-col">folio</span>
-                    </div>
-                    <div class="navbar-right">
-                        <a href="#home">
-                            <span id="span-col" class="span-col">Home</span>
-                        </a>
-                        <a href="#about-us">About me</a>
-                        <a href="#skill">Skils</a>
-                        <a href="#education">Education</a>
-                        <a href="#services">My Services</a>
-                        <a href="#portfolio">My Portfolio</a>
-                        <a href="#getintouch">Get In Touch</a>
-                    </div>
-                </nav>
+    <div class="header">
+        <nav>
+            <img src="netflix-logo.png" class="logo">
+            <div class="navbar-right">
+                <select name="language" class="language-btn">
+                    <option>English</option>
+                    <option>Hindi</option>
+                </select>
+                <button><b>Sign In</b></button>
             </div>
-        </div>
-        <!------MAIN BANNERR------>
-        <div class="container">
-            <div class="width-50">
-                <div class="banner-section">
-                    <span class="span-col">Welcome To CodingWorld.com</span>
-                    <h1>Vikas <span class="span-col">Adodariya</span></h1>
-                    <h2>- I'm a passionate Web Developer from India.</h2>
-                    <a href="#" id="fa">
-                        <i class="fa fa-facebook"></i>
-                    </a>
-                    <a href="#" id="fa">
-                        <i class="fa fa-twitter"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/vikas-adodariya-22b719242/" target="_blank" id="fa">
-                        <i class="fa fa-linkedin"></i>
-                    </a>
-                    <a href="#" id="fa">
-                        <i class="fa fa-instagram"></i>
-                    </a>
-                    <a href="https://github.com/VIKASADODARIYA" target="_blank" id="fa">
-                        <i class="fa fa-github"></i>
-                    </a>
-                </div>
+        </nav>
+        <div class="header-content">
+            <h1><b>Enjoy big movies, hit series and more from ₹ 149.</b></h1>
+            <h3>Join today. Cancel anytime.</h3>
+            <p>Ready to watch? Enter your email to create or restart your
+                membership.</p>
+            <div class="email-signup">
+                <input type="email" id="email" placeholder="Email address" required><label for="email">Email
+                    address</label>
+                <button type="submit"><b>Get Started <img class="submit" src="right-arrow.png" alt=""></b></button>
             </div>
-            <div class="width-50" id="width-50">
-                <img src="Personal-Portfolio/portfolio/image.png">
+            <!-- <div class="required">
+                <div>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="e1vkmu651 default-ltr-cache-2zeu8w e1svuwfo1" data-name="CircleX" role="img"
+                        aria-hidden="true">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M14.5 8C14.5 11.5899 11.5899 14.5 8 14.5C4.41015 14.5 1.5 11.5899 1.5 8C1.5 4.41015 4.41015 1.5 8 1.5C11.5899 1.5 14.5 4.41015 14.5 8ZM16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8ZM4.46967 5.53033L6.93934 8L4.46967 10.4697L5.53033 11.5303L8 9.06066L10.4697 11.5303L11.5303 10.4697L9.06066 8L11.5303 5.53033L10.4697 4.46967L8 6.93934L5.53033 4.46967L4.46967 5.53033Z"
+                            fill="currentColor"></path>
+                    </svg>
+                    <p class="p">Email is required.</p>
+                </div> -->
             </div>
         </div>
     </div>
-    <!------ABOUT US SECTION------>
-    <div class="main-section bg-lightgrey" id="about-us">
-        <div class="container">
-            <div class="width-50">
-                <img src="Personal-Portfolio/portfolio/image.png" class="about-img">
+    <div class="space"></div>
+    <div class="features">
+        <div class="row">
+            <div class="text-col">
+                <h2>Enjoy on your TV</h2>
+                <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
             </div>
-            <div class="width-50">
-                <div class="about-us">
-                    <h2 class="heading-text">About Us</h2>
-                    <h3></h3>
-                    <p>Hi, I am Vikas Adodariya, From India. Get best computer science student portfolio website Genius
-                        In You With Genius 2023. Welcome To The Best Private University in 2023.</p>
-                    <div class="width-50 mt-20">
-                        <table cellspacing="8" cellpadding="8">
-                            <tr>
-                                <th>Name:</th>
-                                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vikas Adodariya</td>
-                            </tr>
-                            <tr>
-                                <th>Email:</th>
-                                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;adodariyavikas@gmail.com</td>
-                            </tr>
-                            <tr>
-                                <th>Birthday:</th>
-                                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12 March, 2003</td>
-                            </tr>
-                            <tr>
-                                <th>Study:</th>
-                                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CVM University</td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="width-50 mt-21">
-                        <table cellspacing="8" cellpadding="8">
-                            <tr>
-                                <th>Phone:</th>
-                                <td>(+91) 3467-890-123</td>
-                            </tr>
-                            <tr>
-                                <th>State:</th>
-                                <td>Gujarat, India</td>
-                            </tr>
-                            <tr>
-                                <th>Freelancer:</th>
-                                <td>Available</td>
-                            </tr>
-                            <tr>
-                                <th>Website:</th>
-                                <td>www.CodingWorld.com</td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
+            <div class="img-col">
+                <img src="https://netflix-images.manikantp.repl.co/Netflix1.gif"
+                    src="https://images.samsung.com/is/image/samsung/p6pim/levant/ua75au7000uxtw/gallery/levant-uhd-au7000-ua75au7000uxtw-409719120?$720_576_PNG$">
             </div>
         </div>
     </div>
-    <!------SKILL SECTION------>
-    <div class="main-section" id="skill">
-        <div class="container">
-            <h2 class="heading-text">My Skills</h2>
-            <div class="width-50">
-                <div class="skill">
-                    <b>HTML</b>
-                    <span>95%</span>
-                    <div>
-                        <span style="width:95%"></span>
-                    </div>
-                </div>
-                <div class="skill">
-                    <b>CSS</b>
-                    <span>91%</span>
-                    <div>
-                        <span style="width:91%"></span>
-                    </div>
-                </div>
-                <div class="skill">
-                    <b>JavaScript</b>
-                    <span>85%</span>
-                    <div>
-                        <span style="width:85%"></span>
-                    </div>
-                </div>
-                <div class="skill">
-                    <b>PHP</b>
-                    <span>80%</span>
-                    <div>
-                        <span style="width:79%"></span>
-                    </div>
-                </div>
+    <div class="space"></div>
+    <div class="features">
+        <div class="row">
+            <div class="img-col">
+                <img src="feature-2.gif">
             </div>
-            <div class="width-50">
-                <div class="width-50">
-                    <div role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="--value:65">
-                        React-65</div>
-                </div>
-                <div class="width-50">
-                    <div role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="--value:85">
-                        Java-85</div>
-                </div>
-                <div class="width-50">
-                    <div role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="--value:65">
-                        Node-65</div>
-                </div>
-                <div class="width-50">
-                    <div role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="--value:85">
-                        Python-85</div>
-                </div>
+            <div class="text-col">
+                <h2>Download your shows to watch offline</h2>
+                <p>Save your favourites easily and always have something to watch.</p>
             </div>
         </div>
     </div>
-    <!------EXPERIENCE SECTION------>
-    <div class="main-section bg-lightgrey" id="education">
-        <div class="container">
-            <div class="edu-exp">
-                <h2 class="heading-text">Education</h2>
-                <div class="experience-list">
-                    <div class="experience-content">
-                        <h2>Charutar Vidhya Mandal University </h2>
-                        <h3>2021-2025</h3>
-                        <p>Bachelor in Computer Engineering</p>
-                    </div>
-                </div>
-                <div class="experience-list">
-                    <div class="experience-content">
-                        <h2>Charutar Vidhya Mandal University</h2>
-                        <h3>2025-2027</h3>
-                        <p>Master in Computer Engineering</p>
-                    </div>
-                </div>
+    <div class="space"></div>
+    <div class="features">
+        <div class="row">
+            <div class="text-col1">
+                <h2>Watch everywhere</h2>
+                <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+            </div>
+            <div class="img-video-col">
+                <video autoplay playsinline muted loop>
+                    <source src="feature-3.mp4" type="video/mp4">
+                </video>
+                <img src="feature-3.png" alt="watch everywhere">
             </div>
         </div>
     </div>
-    <!------SERVICE SECTION------>
-    <div class="main-section" id="services">
-        <div class="container">
-            <h2 class="heading-text">My Service</h2>
-            <div class="width-50">
-                <div class="service-list">
-                    <i class="fa fa-chrome"></i>
-                    <h3>Web Development</h3>
-                    <p>Web development is the coding or programming that enables website functionality, per the owner's
-                        requirements</p>
-                </div>
+    <div class="space"></div>
+    <div class="features">
+        <div class="row">
+            <div class="img-col">
+                <img src="feature-4.png">
             </div>
-            <div class="width-50">
-                <div class="service-list">
-                    <i class="fa fa-instagram"></i>
-                    <h3>Web Design</h3>
-                    <p>Web design is the creation of websites and pages to reflect a company's brand and information and
-                        ensure a user-friendly experience</p>
-                </div>
-            </div>
-            <div class="width-50">
-                <div class="service-list">
-                    <i class="fa fa-reddit"></i>
-                    <h3>Creative Design</h3>
-                    <p>Creative design involves using computer-generated imagery and digital animation to visualise a
-                        product. It's easily identify a brand or product.</p>
-                </div>
-            </div>
-            <div class="width-50">
-                <div class="service-list">
-                    <i class="fa fa-video-camera"></i>
-                    <h3>Video Editing</h3>
-                    <p>Video editing is the post-production and arrangement of video shots.They have a superior
-                        understanding of film, television, and other sorts of videography.</p>
-                </div>
-            </div>
-            <div class="width-50">
-                <div class="service-list">
-                    <i class="fa fa-camera"></i>
-                    <h3>Photography</h3>
-                    <p>Photography is the art, application, and practice of creating images by recording light or
-                        chemically by means of light-sensitive material such as photographic film.</p>
-                </div>
-            </div>
-            <div class="width-50">
-                <div class="service-list">
-                    <i class="fa fa-apple"></i>
-                    <h3>App Development</h3>
-                    <p>Application development is the process of planning, designing, creating, testing, and deploying a
-                        software application to perform business operations.</p>
-                </div>
+            <div class="text-col">
+                <h2>Create profiles for kids</h2>
+                <p>Send children on adventures with their favourite characters in a space made just for them—free with
+                    your membership.</p>
             </div>
         </div>
     </div>
-    <!------TESTIMONIAL SECTION------>
-    <div class="main-section bg-lightgrey">
-        <div class="container">
-            <h2 class="heading-text">What Client Say's </h2>
-            <div class="testimonial">
-                <div class="testimonial-content">
-                    <div class="testimonial-img">
-                        <img src="Personal-Portfolio/portfolio/photo.png">
-                    </div>
-                    <i class="fa fa-quote-left"></i>
-                    <p> Contrary to popular belief, I will provide free portfolio website templates. It has roots in a
-                        piece of classical Latin literature from 45 BC, making it. Richard McClintock, Hampden-Sydney
-                        College.</p>
-                    <div class="testimonial-name">
-                        <h4>Johndove</h4>
-                        <h5>Data Analysis</h5>
-                    </div>
+    <div class="space"></div>
+    <div class="faq">
+        <h2><b>Frequently Asked Questions</b></h2>
+        <ul class="accordian">
+            <li>
+                <input type="radio" name="accordian" id="first">
+                <label for="first">What is Netflix?</label>
+                <div class="content">
+                    <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies,
+                        anime, documentaries and more-on thousands of internet-connected devices.</p>
+                    <p>You can watch as much as you want, whenever you want, without a single ad-all for one low monthly
+                        price. There's always something new to discover, and new TV shows and movies are added every
+                        week!</p>
                 </div>
-            </div>
-            <div class="testimonial">
-                <div class="testimonial-content">
-                    <div class="testimonial-img">
-                        <img src="Personal-Portfolio/portfolio/photo.png">
-                    </div>
-                    <i class="fa fa-quote-left"></i>
-                    <p> Contrary to popular belief, I will provide free portfolio website templates. It has roots in a
-                        piece of classical Latin literature from 45 BC, making it. Richard McClintock, Hampden-Sydney
-                        College.</p>
-                    <div class="testimonial-name">
-                        <h4>Johndove</h4>
-                        <h5>Data Analysis</h5>
-                    </div>
+            </li>
+            <li>
+                <input type="radio" name="accordian" id="second">
+                <label for="second">How much does the Netflix cost? </label>
+                <div class="content">
+                    <p>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one
+                        fixed monthly fee. Plans range from ₹ 149 to ₹ 649 a month. No extra costs, no contracts.</p>
                 </div>
-            </div>
-            <div class="testimonial">
-                <div class="testimonial-content">
-                    <div class="testimonial-img">
-                        <img src="Personal-Portfolio/portfolio/photo.png">
-                    </div>
-                    <i class="fa fa-quote-left"></i>
-                    <p> Contrary to popular belief, I will provide free portfolio website templates. It has roots in a
-                        piece of classical Latin literature from 45 BC, making it. Richard McClintock, Hampden-Sydney
-                        College.</p>
-                    <div class="testimonial-name">
-                        <h4>Johndove</h4>
-                        <h5>Data Analysis</h5>
-                    </div>
+            </li>
+            <li>
+                <input type="radio" name="accordian" id="third">
+                <label for="third">Where can I watch?</label>
+                <div class="content">
+                    <p>Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at
+                        netflix.com from your personal computer or on any internet-connected device that offers the
+                        Netflix app, including smart TVs, smartphones, tablets, streaming media players and game
+                        consoles.</p>
+                    <p>You can also download your favourite shows with the iOS, Android, or Windows 10 app. Use
+                        downloads to watch while you're on the go and without an internet connection. Take Netflix with
+                        you anywhere.</p>
                 </div>
-            </div>
+            </li>
+            <li>
+                <input type="radio" name="accordian" id="fourth">
+                <label for="fourth">How do I Cancel?</label>
+                <div class="content">
+                    <p>Netflix is flexible. There are no annoying contracts and no commitments. You can easily cancel
+                        your account online in two clicks. There are no cancellation fees-start or stop your account
+                        anytime.</p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="accordian" id="fifth">
+                <label for="fifth">What can I watch on Netflix?</label>
+                <div class="content">
+                    <p>Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning
+                        Netflix originals, and more. Watch as much as you want, anytime you want.</p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="accordian" id="sixth">
+                <label for="sixth">Is Netflix good for kids?</label>
+                <div class="content">
+                    <p>The Netflix Kids experience is included in your membership to give parents control while kids
+                        enjoy family-friendly TV shows and films in their own space.</p>
+                    <p>Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating
+                        of content kids can watch and block specific titles you don't want kids to see.</p>
+                </div>
+            </li>
+        </ul>
+        <strong>Ready to watch? Enter your email to create or restart your
+            membership.</strong>
+        <div class="email-signup email-signup-down">
+            <input type="email" id="email" placeholder="Email address" required>
+            <label for="email">Email address</label>
+            <button type="submit"><b>Get Started <img class="submit" src="right-arrow.png" alt=""></b></button>
         </div>
     </div>
-    <!------PORTFOLIO SECTION------>
-    <div class="main-section" id="portfolio">
-        <div class="container">
-            <h2 class="heading-text">My Portfolio</h2>
-            <div class="gallery">
-                <div class="width-33">
-                    <img src="Personal-Portfolio/portfolio/gallery-1.jpg">
-                </div>
-                <div class="width-33">
-                    <img src="Personal-Portfolio/portfolio/gallery-2.jpg">
-                </div>
-                <div class="width-33">
-                    <img src="Personal-Portfolio/portfolio/gallery-3.jpg">
-                </div>
-                <div class="width-33">
-                    <img src="Personal-Portfolio/portfolio/gallery-4.jpg">
-                </div>
-                <div class="width-33">
-                    <img src="Personal-Portfolio/portfolio/gallery-5.jpg">
-                </div>
-                <div class="width-33">
-                    <img src="Personal-Portfolio/portfolio/gallery-6.jpg">
-                </div>
-            </div>
-        </div>
-        <!-- -----------CONTACT US SECTION--------------------- -->
-        <div class="main-section contact bg-lightgrey" id="getintouch">
-            <div class="container">
-                <h2 class="heading-text">Get In Touch</h2>
-                <div class="width-100">
-                    <form>
-                        <div>
-                            <input type="text" id="fullname" name="name" placeholder="name" required>
-                            <label for="fullname" id="input-1">Full Name...</label>
-                        </div><br>
-                        <div>
-                            <input type="email" id="email-id" name="email" placeholder="email" required>
-                            <label for="email-id" id="input-2">Full Email Id...</label>
-                        </div><br>
-                        <div>
-                            <input type="text" maxlength="14" pattern="[+]\d{1,3}\d{1,10}" id="mobile-no" name="mobile"
-                                placeholder="mobile no" required>
-                            <label for="mobile-no" id="input-3">Full Mobile No...</label>
-                        </div><br>
-                        <div>
-                            <textarea id="fulladdress" name="address" placeholder="address" required></textarea>
-                            <label for="fulladdress" id="input-4">Enter Address...</label>
-                        </div><br>
-                        <button type="submit">Submit</button>
-                    </form>
-                </div>
-                <div class="width-33" id="details">
-                    <h3>
-                        <i class="fa fa-map-marker">
-                        </i>
-                    </h3>
-                    <h4>Address</h4>
-                    <p><a href="https://maps.app.goo.gl/yzqa3qJot3NfDtfY6" target="_blank">Vallabh Vidhyanagar, Anand</a></p>
-                </div>
-                <div class="width-33" id="details">
-                    <h3>
-                        <i class="fa fa-phone">
-                        </i>
-                    </h3>
-                    <h4>Phone</h4>
-                    <p><a href="tel:+91-9484537324" target="_blank">+91-9484537324</a></p>
-                </div>
-                <div class="width-33" id="details">
-                    <h3>
-                        <i class="fa fa-envelope-o">
-                        </i>
-                    </h3>
-                    <h4>Email</h4>
-                    <p><a href="mailto:adodariyavikas@gmail.com" target="_blank">adodariyavikas@gmail.com</a></p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!------FOOTER SECTION------>
     <div class="footer">
-        <div class="container">
-            <div class="footer-sect social-icon width-50">
-                <a href="#" id="fa">
-                    <i class="fa fa-facebook"></i>
-                </a>
-                <a href="#" id="fa">
-                    <i class="fa fa-twitter"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/vikas-adodariya-22b719242/" target="_blank" id="fa">
-                    <i class="fa fa-linkedin"></i>
-                </a>
-                <a href="#" id="fa">
-                    <i class="fa fa-instagram"></i>
-                </a>
-                <a href="https://github.com/VIKASADODARIYA" target="_blank" id="fa">
-                    <i class="fa fa-github"></i>
-                </a>
+        <h2>Questions? call <a id="tel" href="tel:+">000-800-919-1694</a></h2>
+
+        <div class="row">
+            <div class="col">
+                <a href="#">FAQ</a>
+                <a href="#">Investor Relations</a>
+                <a href="#">Privacy</a>
+                <a href="#">Speed Test</a>
             </div>
-            <div class="footer-sect mt-20 width-50">
-                <h4>CopyRight © 2023 www.CodingWorld.com Website Template. All Rights Reserved</h4>
+            <div class="col">
+                <a href="#">Help Center</a>
+                <a href="#">Jobs</a>
+                <a href="#">Cookies Preferences</a>
+                <a href="#">Legal Notices</a>
+            </div>
+            <div class="col">
+                <a href="#">Account</a>
+                <a href="#">Ways to watch</a>
+                <a href="#">Corporate Information</a>
+                <a href="#">Only on Netflix?</a>
+            </div>
+            <div class="col">
+                <a href="#">Media Center</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Contact Us</a>
+
             </div>
         </div>
+        <div class="navbar-right">
+            <select name="language" class="language-btn">
+                <option>English</option>
+                <option>Hindi</option>
+            </select>
+        </div>
+        <p class="copyright-text">Netflix India</p>
     </div>
-    <script>
-        window.addEventListener('scroll', function () {
-            var nav = document.querySelector('nav');
-            nav.classList.toggle('scrolled', window.scrollY > 0);
-        });
-        history.scrollRestoration = "manual";
-        window.onscroll = function () { myFunction() };
 
-        function myFunction() {
-            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            var scrolled = (winScroll / height) * 100;
-            document.getElementById("myBar").style.width = scrolled + "%";
-        }
-    </script>
 </body>
 
 </html>
