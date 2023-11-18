@@ -4,7 +4,7 @@ const wrapper = document.querySelector(".wrapper"),
     inputField = inputPart.querySelector("input"),
     locationBtn = inputPart.querySelector("button"),
     weatherPart = wrapper.querySelector(".weather-part"),
-    wIcon = weatherPart.querySelector("img"),
+    wIcon = weatherPart.querySelector("#img"),
     arrowBack = wrapper.querySelector("header i");
 
 let api;
