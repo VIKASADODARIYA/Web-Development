@@ -92,7 +92,7 @@ function weatherDetails(info) {
 
         // Set weather icon based on weather condition ID
         if (id == 800) {
-            wIcon.src = "images/clear.png";
+            wIcon.src = "Weather-Website/Weather-Website/images/clear.png";
         } else if (id >= 200 && id <= 232) {
             wIcon.src = "images/storm.png";
         } else if (id >= 600 && id <= 622) {
