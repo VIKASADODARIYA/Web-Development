@@ -91,6 +91,7 @@ function weatherDetails(info) {
 
         // Set weather icon based on weather condition ID
         if (id == 800) {
+            console.log('Setting clear.png');
             document.getElementById('weather-icon').innerHTML = '<img src="images/clear.png" alt="Weather Icon">';
         } else if (id >= 200 && id <= 232) {
             document.getElementById('weather-icon').innerHTML = '<img src="images/strom.png" alt="Weather Icon">';
