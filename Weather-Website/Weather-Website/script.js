@@ -91,17 +91,17 @@ function weatherDetails(info) {
 
         // Set weather icon based on weather condition ID
         if (id == 800) {
-            document.getElementById('weather-icon').innerHTML = '<img src="/images/clear.png" alt="Weather Icon">';
+            document.getElementById('weather-icon').innerHTML = '<img src="./images/clear.png" alt="Weather Icon">';
         } else if (id >= 200 && id <= 232) {
-            document.getElementById('weather-icon').innerHTML = '<img src="/images/strom.png" alt="Weather Icon">';
+            document.getElementById('weather-icon').innerHTML = '<img src="./images/strom.png" alt="Weather Icon">';
         } else if (id >= 600 && id <= 622) {
-            document.getElementById('weather-icon').innerHTML = '<img src="/images/snow.png" alt="Weather Icon">';
+            document.getElementById('weather-icon').innerHTML = '<img src="./images/snow.png" alt="Weather Icon">';
         } else if (id >= 701 && id <= 781) {
-            document.getElementById('weather-icon').innerHTML = '<img src="/images/haze.png" alt="Weather Icon">';
+            document.getElementById('weather-icon').innerHTML = '<img src="./images/haze.png" alt="Weather Icon">';
         } else if (id >= 801 && id <= 804) {
-            document.getElementById('weather-icon').innerHTML = '<img src="/images/cloud.png" alt="Weather Icon">';
+            document.getElementById('weather-icon').innerHTML = '<img src="./images/cloud.png" alt="Weather Icon">';
         } else if ((id >= 500 && id <= 531) || (id >= 300 && id <= 321)) {
-            document.getElementById('weather-icon').innerHTML = '<img src="/images/rain.png" alt="Weather Icon">';
+            document.getElementById('weather-icon').innerHTML = '<img src="./images/rain.png" alt="Weather Icon">';
         }
 
         // Update weather details in the UI
