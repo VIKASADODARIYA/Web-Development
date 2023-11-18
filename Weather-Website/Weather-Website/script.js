@@ -89,50 +89,6 @@ function weatherDetails(info) {
         const windDirectionSymbolElement = weatherPart.querySelector(".direction .details .deg");
         const windDirectionSymbol = getWindDirectionSymbol(windDirectionDegree);
 
-        // Set weather icon based on weather condition ID
-        // if (id == 800) {
-        //     document.getElementById("weather-icon").src = "images/clear.png";
-        //     // document.getElementById('weather-icon').innerHTML = '<img src="images/clear.png" alt="Weather Icon">';
-        // } else if (id >= 200 && id <= 232) {
-        //     document.getElementById('weather-icon').innerHTML = '<img src="images/strom.png" alt="Weather Icon">';
-        // } else if (id >= 600 && id <= 622) {
-        //     document.getElementById('weather-icon').innerHTML = '<img src="images/snow.png" alt="Weather Icon">';
-        // } else if (id >= 701 && id <= 781) {
-        //     document.getElementById('weather-icon').innerHTML = '<img src="images/haze.png" alt="Weather Icon">';
-        // } else if (id >= 801 && id <= 804) {
-        //     document.getElementById('weather-icon').innerHTML = '<img src="images/cloud.png" alt="Weather Icon">';
-        // } else if ((id >= 500 && id <= 531) || (id >= 300 && id <= 321)) {
-        //     document.getElementById('weather-icon').innerHTML = '<img src="images/rain.png" alt="Weather Icon">';
-        // }
-
-        let weatherIconPath;
-
-        switch (true) {
-            case id == 800:
-                weatherIconPath = 'images/clear.png';
-                break;
-            case id >= 200 && id <= 232:
-                weatherIconPath = 'images/strom.png';
-                break;
-            case id >= 600 && id <= 622:
-                weatherIconPath = 'images/snow.png';
-                break;
-            case id >= 701 && id <= 781:
-                weatherIconPath = 'images/haze.png';
-                break;
-            case id >= 801 && id <= 804:
-                weatherIconPath = 'images/cloud.png';
-                break;
-            case (id >= 500 && id <= 531) || (id >= 300 && id <= 321):
-                weatherIconPath = 'images/rain.png';
-                break;
-            default:
-                weatherIconPath = 'images/default.png'; // Set a default icon path if none of the conditions match
-        }
-        
-        document.getElementById('weather-icon').innerHTML = `<img src="${weatherIconPath}" alt="Weather Icon">`;
-
-
         // Update weather details in the UI
         weatherPart.querySelector(".temp .numb").innerText = Math.floor(temp);
         weatherPart.querySelector(".weather").innerText = description;
