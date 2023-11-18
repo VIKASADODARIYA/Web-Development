@@ -92,17 +92,17 @@ function weatherDetails(info) {
 
         // Set weather icon based on weather condition ID
         if (id == 800) {
-            wIcon.src = "clear.png";
+            wIcon.src = "Weather-Website/Weather-Website/images/clear.png";
         } else if (id >= 200 && id <= 232) {
-            wIcon.src = "storm.png";
+            wIcon.src = "Weather-Website/Weather-Website/images/storm.png";
         } else if (id >= 600 && id <= 622) {
-            wIcon.src = "snow.png";
+            wIcon.src = "Weather-Website/Weather-Website/images/snow.png";
         } else if (id >= 701 && id <= 781) {
-            wIcon.src = "haze.png";
+            wIcon.src = "Weather-Website/Weather-Website/images/haze.png";
         } else if (id >= 801 && id <= 804) {
-            wIcon.src = "cloud.png";
+            wIcon.src = "Weather-Website/Weather-Website/images/cloud.png";
         } else if ((id >= 500 && id <= 531) || (id >= 300 && id <= 321)) {
-            wIcon.src = "rain.png";
+            wIcon.src = "Weather-Website/Weather-Website/images/rain.png";
         }
 
         // Update weather details in the UI
