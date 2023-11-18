@@ -4,7 +4,6 @@ const wrapper = document.querySelector(".wrapper"),
     inputField = inputPart.querySelector("input"),
     locationBtn = inputPart.querySelector("button"),
     weatherPart = wrapper.querySelector(".weather-part"),
-    wIcon = weatherPart.querySelector("#weather-icon"),
     arrowBack = wrapper.querySelector("header i");
 
 let api;
